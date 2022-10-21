@@ -1,842 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="skeleton.css" />
-    <title>Responsive Redesign</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia"
-    />
-    <style>
-      body {
-        font-family: "Inter";
-        font-size: 22px;
-      }
-    </style>
-  </head>
-  <body>
-    <!--------------Title--------------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            color: #070600;
-            width: 100%;
-            text-align: center;
-            font-size: 3rem;
-            font-weight: bolder;
-            border-bottom: 2px solid #e6e6e9;
-            background-color: white;
-          "
-        >
-          A Responsive Redesign of the Brown Fellowships Website
-        </div>
-      </div>
-    </div>
-    <!--------------Overview----------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            margin-top: 5%;
-            border-bottom: 5px solid#C00404;
-            color: #070600;
-            width: auto;
-            margin-left: 9.5%;
-            height: 3.5rem;
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          Overview:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 70%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <p>
-            As a student with big ambitions but not a lot of money to accomplish
-            them, Fellowships have always interested me. Getting paid for an
-            academic or moral pursuit? It can not get better than that. However,
-            as I started exploring how I could get involved with certain
-            Fellowships, I was greeted with a page straight out of the early
-            2010s. I got past the optics of the page and started to regularly
-            use the webpage. However, I soon realized that I was finding myself
-            asking, "wait, where do I go for office hours?" or "how do I go back
-            to this page". When I found myself asking these questions, I
-            realized that there was a usability problem and serious improvements
-            needed to be made to the website so other users don't have the same
-            confusion as I did. My own experience is where my inspiration for
-            redesigning the Brown Fellowship website stemmed from. Come along the
-            journey of how I did such that!
-          </p>
-        </div>
-      </div>
-      <div
-        style="
-          border-bottom: 1px solid #e6e6e9;
-          width: 70%;
-          margin: 2.5% 0% 2.5% 17%;
-        "
-      ></div>
-    </div>
-    <!--------------Usability Eval----------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            border-bottom: 5px solid#C00404;
-            color: #070600;
-            width: auto;
-            margin-left: 9.5%;
-            height: 3.5rem;
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          Original Page:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div class="twelve columns">
-          <img
-            style="max-width: 100%"
-            src="Images/original-page.png"
-            alt="Image of the original Brown Fellowship web-page"
-          />
-          <img
-            style="max-width: 100%"
-            src="Images/origina-page-2.png"
-            alt="Image of the original Brown Fellowship web-page"
-          />
-          <p>
-            <br />
-            Above is the original Brown Fellowships webpage. Let's explore some
-            of the usability features (or lack of) that I and other users may
-            face when using this webpage and how we can improve upon it.
-          </p>
-        </div>
-      </div>
-      <div
-        style="
-          border-bottom: 1px solid #e6e6e9;
-          width: 70%;
-          margin: 2.5% 0% 2.5% 17%;
-        "
-      ></div>
-    </div>
-    <!-----------Usability Evaluations------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            border-bottom: 5px solid#C00404;
-            color: #070600;
-            width: auto;
-            height: 3.5rem;
-            font-weight: bolder;
-            margin-left: 9.5%;
-            margin-bottom: 2%;
-          "
-        >
-          Usability Evaluation:
-        </div>
-      </div>
+<head>
 
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div class="usa-descrip">
-          <p>
-            Let’s run through the usability of the fellowship website. Always
-            important to remember that this could be the difference between
-            someone applying for a fellowship versus someone being dissatisfied
-            with the prospect of applying! We will analyze three main factors:
-            <b> learnability, memorability, and efficiency.</b> We will do this
-            with the help of the 10 Usability Heuristics. Here is a link for
-            more information on these Heuristics(<a
-              href="https://www.nngroup.com/articles/ten-usability-heuristics/"
-              >10 Usability Heuristics for User Interface Design</a
-            >).
-            <br />
-            <br />
-            Scroll through the images to see how we incorporate and or improve
-            the usability concepts in our low-fidelity prototypes.
-          </p>
-        </div>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Personas and Storyboarding</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Playfair+Display:800" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Ultra" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+<body>
+  <!-- Personas and Storyboarding
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h1>Personas and Storyboarding</h1>
       </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          What the website does well:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <li>
-            <b>Match between the system and the real world:</b> the prose
-            throughout the website is welcoming to new users and conversational
-            which ultimately helps with the <b>learnability</b> of the website
-            as users are able to clearly read and feel welcomed.
-          </li>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <section class="carousel">
-            <div class="slides">
-              <div class="slides-item slide-1" id="slide-1">
-                <img
-                  src="Images/prose.jpeg"
-                  alt="Image of the original website with the written prose circled red. "
-                />
-              </div>
-              <div class="slides-item slide-2" id="slide-2">
-                <img
-                  src="Images/prose-fidel.png"
-                  alt="Image of low-fidel highlighting the prose."
-                />
-              </div>
-            </div>
-            <div class="carousel__nav">
-              <a class="slider-nav" href="#slide-1">1</a>
-              <a class="slider-nav" href="#slide-2">2</a>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          What the website does NOT do well:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <li>
-            A lack of <b>aesthetic and minimalist design:</b> there are two big
-            blocks of text on the home page that compete with relevant units of
-            information and diminish the visibility of important information.
-            Not only does this hinder <b>learnability</b> but this also
-            negatively affects returning users' <b>memorability </b> of the
-            website as the relevant information they once saw and engaged with
-            is only viewable after having to dig around the website.
-          </li>
-          <li>
-            Lack of easily viewable
-            <b>help or documentation for new users.</b> This hinders
-            <b> learnability</b> of the website.
-          </li>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <section class="carousel">
-            <div class="slides">
-              <div class="slides-item slide-1" id="slide-3">
-                <img
-                  src="Images/help.jpeg"
-                  alt="Image of the original website with the usability concerns highlighted."
-                />
-              </div>
-              <div class="slides-item slide-2" id="slide-4">
-                <img
-                  src="Images/help-fidel.png"
-                  alt="Image of low-fidel highlighting the addition of help button and white space."
-                />
-              </div>
-            </div>
-            <div class="carousel__nav">
-              <a class="slider-nav" href="#slide-3">1</a>
-              <a class="slider-nav" href="#slide-4">2</a>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <li>
-            <b>Recognition rather than recall:</b> the website does not do a
-            good job of making objects, actions, and options visible when
-            entering the home page. For example, the vertical orientation of the
-            nav bar and calendar makes it such that the user may miss out on
-            helpful pages because it gets cut out which impedes
-            <b>learnability, memorability, and efficiency. </b> Additionally,
-            having two different competing nav bars creates conflict about which
-            navbar to use amongst users impeding all three factors again.
-          </li>
-          <li>
-            <b>Flexibility and Efficiency of Use: </b> the website starts to
-            accomplish this by putting the calendar and office hours link on the
-            first home page such that users who already know what fellowships
-            are will have quick access to important information. However, the
-            design of this is not responsive and has light text that WAVE has
-            flagged as an accessibility issue. Additionally, something that I
-            had trouble doing was memorizing where the link to schedule office
-            hours was located; this was because the blocks of text were pushing
-            this valuable information to the bottom of the page.
-          </li>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <section class="carousel">
-            <div class="slides">
-              <div class="slides-item slide-1" id="slide-5">
-                <img
-                  src="Images/nav.jpeg"
-                  alt="Image of the original website with the usability concerns highlighted "
-                />
-              </div>
-              <div class="slides-item slide-2" id="slide-6">
-                <img
-                  src="Images/nav-fidel.png"
-                  alt="Image of low-fidel highlighting the addition of one nav bar and office hours."
-                />
-              </div>
-            </div>
-            <div class="carousel__nav">
-              <a class="slider-nav" href="#slide-5">1</a>
-              <a class="slider-nav" href="#slide-6">2</a>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          A note about Accessibility:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          The original website was run through WAVE accessibility tool. A
-          summary of the finding is listed below:
-          <ul style="margin-left: 10%">
-            <li>
-              Certain links contain no text making it difficult for people using
-              screen readers to use the webpage
-            </li>
-            <li>Alt tags are present :)</li>
-            <li>
-              There are extremely small texts located throughout the webpage.
-              This makes it hard for people who have vision problems to use our
-              website.
-            </li>
-            <li>
-              The calendar has low contrast making it difficult for people who
-              have vision problems to use our website.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <p>Below are the three responsive low-fidel prototypes.</p>
-        </div>
-      </div>
-      <div
-        style="
-          border-bottom: 1px solid #e6e6e9;
-          width: 70%;
-          margin: 2.5% 0% 2.5% 17%;
-        "
-      ></div>
     </div>
-    <!-----------Products--------------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            border-bottom: 5px solid#C00404;
-            color: #070600;
-            width: auto;
-            height: 3.5rem;
-            font-weight: bolder;
-            margin-left: 9.5%;
-            margin-bottom: 2%;
-          "
-        >
-          The Product:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          Low-Fidelity Prototypes:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <section class="carousel">
-          <div class="slides">
-            <div class="slides-item slide-1" id="slide-7">
-              <img
-                src="Images/low-fidel-comp.png"
-                alt="Image of the computer based low-fidel prototype. "
-              />
-            </div>
-            <div class="slides-item slide-2" id="slide-8">
-              <img
-                src="Images/low-fidel-ipad.png"
-                alt="Image of the ipad based low-fidel prototype. "
-              />
-            </div>
-            <div class="slides-item slide-3" id="slide-9">
-              <img
-                src="Images/low-fidel-iphone.png"
-                alt="Image of the iphone based low-fidel prototype. "
-              />
-            </div>
-          </div>
-          <div class="carousel__nav">
-            <a class="slider-nav" href="#slide-7">1</a>
-            <a class="slider-nav" href="#slide-8">2</a>
-            <a class="slider-nav" href="#slide-9">3</a>
-          </div>
-        </section>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          Visual Design Style Guide:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <img
-            style="max-width: 100%"
-            src="Images/style-guide.png"
-            alt="Image of Visual Design Style Guide"
-          />
-          <p>
-            <br />
-            My inspiration for the style guide was using some of the fundamental
-            palettes of the university. I also wanted to incorporate a
-            minimalist design thus there are very few moving parts and simple
-            font. I have also highlighted the user's interactions when hovering
-            over the navbar and buttons which mimic the Brown University home
-            page.
-          </p>
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          High-Fidelity Prototypes:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 100%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <iframe
-          style="border: 1px solid rgba(0, 0, 0, 0.1); margin-right: 50rem"
-          width="65%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FgEII5eHvEZmRTls0Knmbtv%2FResponsive-Redesign%3Fnode-id%3D1%253A3%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A3"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 100%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <iframe
-          style="border: 1px solid rgba(0, 0, 0, 0.1)"
-          width="65%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZmPAh50ktsBWtM9CQMG0Zq%2FResponsive-Redesign-Ipad%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 100%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <iframe
-          style="border: 1px solid rgba(0, 0, 0, 0.1)"
-          width="65%"
-          height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPFyTXHb50kThRSFhMIyGLd%2FResponsive-Redesign-iPhone%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            margin-top: 2rem;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          How we will build:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <img
-            style="max-width: 100%"
-            src="Images/build1.png"
-            alt="Image of Visual Design Style Guide"
-          />
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <img
-            style="max-width: 100%"
-            src="Images/build2.png"
-            alt="Image of Visual Design Style Guide"
-          />
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          text-align: left;
-          margin-left: 14%;
-        "
-      >
-        <div
-          class="one column"
-          style="
-            border-bottom: 2px solid#C00404;
-            color: #070600;
-            width: auto;
-            margin-top: 2rem;
-            /* height: 3.5rem; */
-            font-weight: bolder;
-            margin-bottom: 2%;
-          "
-        >
-          Website Demo and Link:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <img
-            style="width: 100%; height: 100%"
-            src="Images/demo.gif"
-            alt="Image of Visual Design Style Guide"
-          />
-        </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%;">
         <p>
-          <br />
-          Above is a demo of my website highlighting the features and
-          responsiveness of the design. Here is the link to the website:
-          <a href="https://excitedtiger666.github.io/Responsive-Redesign/">
-            <b>Brown Fellowships Redesign.</b></a
-          >
-          I hope you enjoy your time there!
+          Personas and Storyboarding are two of the most common tools used by UI/UX
+          designers to step into users' shoes and understand how they interact with 
+          an interface/experience. These tools are simple, effective and inexpensive
+          making them an indispensable tool in a designer's arsenal. The following
+          article walks through the preparatory steps of creating personas and 
+          storyboards including contextual inquiries which involve observing real users interacting
+          with an interface and interviewing them about their experiences. I will then
+          use this information to develop two personas as well as a storyboard for one 
+          of these personas. 
+        </p>
+        <h4>Personas</h4>
+        <p>
+          Personas are user models that are represented as specific, individual human beings.
+          They are not actual people but are synthesized directly from observations of real
+          people. One of the key elements that allow personas to be successful as user models
+          is that they are personifications. This helps engage the empathy of the designer and
+          other stakeholders in a way that simpler user models are unable to.
+          (Cooper et al., About Face: The Essentials of Interaction Design)
+        </p>
+        <h4>Storyboarding</h4>
+        <p>
+          Storyboards are visual representations of a narrative depicting a
+          persona using an interface/experience. Narrative is one of our most powerful creative 
+          methods. Imagining a story about a person using a product leverages our creativity
+          to a greater extent than when we just imagine a better form factor or configuration of
+          screen elements. Further, because of the intrinsically social aspect of a narrative, it
+          is a very effective and compelling way to share good ideas among team members and stakeholders.
+          (Cooper et al., About Face: The Essentials of Interaction Design)
         </p>
       </div>
-      <div
-        style="
-          border-bottom: 1px solid #e6e6e9;
-          width: 70%;
-          margin: 2.5% 0% 2.5% 17%;
-        "
-      ></div>
     </div>
-    <!-----------Conclusion--------------->
-    <div class="container">
-      <div class="row">
-        <div
-          class="one column"
-          style="
-            margin-top: 5%;
-            border-bottom: 5px solid#C00404;
-            color: #070600;
-            width: auto;
-            height: 3.5rem;
-            font-weight: bolder;
-            margin-left: 10%;
-            margin-bottom: 2%;
-          "
-        >
-          All in all:
-        </div>
-      </div>
-      <div
-        class="row"
-        style="
-          font-size: 1.5rem;
-          width: 65%;
-          margin-left: 21.5%;
-          text-align: left;
-        "
-      >
-        <div>
-          <p>
-            I hope you enjoyed coming along on this redesign journey with me
-            today. This journey has been an incredibly fulfilling one for me.
-            Fundamentally, I have learned that the usability of your websites
-            -quite frankly products as a whole- is crucial. No amount of
-            prestige, power, or influence will win your customers over if they
-            can't actually use the site or product.
-          </p>
-        </div>
+  </div>
+  <!-- Selecting an Interface
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>Selecting an Interface</h3>
+        <p>
+          I wanted to pick an interface that was in public view (i.e., so that other members
+          of the public may see what is going on) so as to not make those being observed feel
+          uncomfortable or surprised that someone could see what they were doing. At the same time,
+          I did not want to pick something that only had very simple interactive components like 
+          a faucet or door handle. So I decided to go with an automated ordering kiosk at a cafe.
+        </p>
       </div>
     </div>
-    <div
-      style="
-        border-bottom: 1px solid #e6e6e9;
-        width: 70%;
-        margin: 2.5% 0% 2.5% 17%;
-      "
-    ></div>
-  </body>
+  </div>
+  <!-- The Interface
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>The Interface</h3>
+        <p>The following sketches illustrate the way key components of the interface work. </p>
+        <!-- screen 1 -->
+        <div class="row">
+          <div class="column">
+            <h4>Screen 1</h4>
+            <div class="image-wrapper">
+              <img src="images/screen1.png" style="max-width: 70%;">
+            </div>
+          </div>
+        </div>
+        <!-- caption -->
+        <div class="row">
+          <div class="column" style="margin-top: 3%">
+            <p>
+              The user is met with the following screen showing them the various drinks available,
+              they can scroll down on this page to view more drinks. At the very top of the screen
+              there is a search icon they can click which will bring up a keyboard allowing them to
+              search for a drink of their choice. They can also tap on any of the submenus (Popular, 
+              Express, Fruit, Taro etc.) to bring those drinks to the forefront, and they can also
+              scroll across that section horizontally to the right to view more submenus. 
+            </p>
+          </div>
+        </div>
+        <!-- screen 2  -->
+        <div class="row">
+          <div class="column">
+            <h4>Screen 2</h4>
+            <div class="image-wrapper">
+              <img src="images/screen2.png" style="max-width: 70%;">
+            </div>
+          </div>
+        </div>
+        <!-- caption  -->
+        <div class="row">
+          <div class="column" style="margin-top: 3%">
+            <p>
+              When the user clicks on any drink, they are brought to the following page that lets them
+              customize their drink and add it to their cart.
+            </p>
+          </div>
+        </div>
+        <!-- screen 3  -->
+        <div class="row">
+          <div class="column">
+            <h4>Screen 3</h4>
+            <div class="image-wrapper">
+              <img src="images/screen3.png" style="max-width: 70%;">
+            </div>
+          </div>
+        </div>
+        <!-- caption  -->
+        <div class="row">
+          <div class="column" style="margin-top: 3%">
+            <p>
+              Once the user adds a drink to their cart, they are brought back to the home page and can 
+              checkout or add more drinks.
+            </p>
+          </div>
+        </div>
+        <!-- goals  -->
+        <div class="row">
+          <div class="column">
+            <h4>Goals</h4>
+            <p>
+              This interface could aim to do many things, including, but not limited to: <br>
+              <ul>
+                <li>Allow people to order more quickly when there is a long line.</li>
+                <li>Ease pressure on staff during peak hours.</li>
+                <li>Give people time and comfort to pick the drink they want.</li>
+                <li>For those who do not want to interact with staff.</li>
+                <li>Could be a test for a fully automated front-end of the store to help reduce labor costs.</li>
+              </ul>
+              This <a href="a.	https://www.restaurantdive.com/news/report-50-of-operators-plan-to-deploy-automation-tech-in-2-to-3-years/608201/">article</a> 
+              talks about the advantages of such automated kiosks and how the food industry is moving toward greater automation. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contextual Inquiry
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>The Contextual Inquiry</h3>
+        <h4>Observations</h4>
+        <p>
+          I observed 10 customers using the automated kiosk over the course of an hour. The following are
+          my key observations: <br>
+          <ul>
+            <li>50% of customers knew how to navigate the interface very well.</li>
+            <li>70% of customers ordered more than one drink.</li>
+            <li>100% of customers customized their drink.</li>
+            <li>20% of customers made a mistake when customizing their drink but had no way to edit their 
+              order so they simply had to delete that item and customize their drink again. They expressed
+              dissapointment and spent time attempting to find a way to edit their order.</li>
+            <li>60% of customers had headphones on the entire time they were using the interface and 
+              were in the store. They appeared preoccupied and it seemed like they did not want to talk to
+              anyone.</li>
+            <li>90% of customers showed visible dissapointment at the interface asking them for their 
+              phone number and name when they tried to checkout. They expressed further dissapointment
+              when they realized they had no way to avoid entering that information.</li>
+            <li>10% of customers were frustrated by glitches with the interface.</li>
+            <li>30% of customers were surprised at not being offered the choice to get a printed receipt.</li>
+            <li>20% of customers took a while to find the credit card machine.</li>
+            <li>20% of customers expressed confusion at some of the textual information.</li>
+          </ul>
+        </p>
+        <h4>Interviews</h4>
+        <h5>Questions</h5>
+        <p>
+          <ul>
+            <li>What do you think about automated kiosks at restuarants or cafes?</li>
+            <li>What do you think about the placement of the automated kiosk?</li>
+            <li>What do you think is the purpose of the automated kiosk?</li>
+            <li>What did you think of the automated kiosk when you first saw it in this cafe?</li>
+            <li>What are your thoughts about the home page (i.e., the page with the drinks and menus)?</li>
+            <li>After you get to the home page, where would you go next?</li>
+            <li>How did you feel about ordering multiple drinks?</li>
+            <li>How did you feel about customizing your drink?</li>
+            <li>How did you feel about editing a drink you already added to your cart?</li>
+            <li>How did you feel about the checkout process? </li>
+          </ul>
+        </p>
+        <h5>Summary of User Sentiments</h5>
+        <p>
+          <ul>
+            <li>Nearly all users felt that the interface was well desgined and was intuitive to use. The 
+              large buttons and lack of extraneous information helped greatly. The interface was also smooth
+              and the touch screen was responsive.</li>
+            <li>Users also expressed that they decided to use the machine for one of the following reasons:
+              <ul>
+                <li>They felt like it gave them a chance to order at their own pace.</li>
+                <li>They wanted to ease pressure on staff that they could see were working 
+                  hard to prepare drinks.</li>
+                <li>They wanted to avoid interacting with staff or to skip a longer line and
+                  order their drink more quickly since they were in a hurry.</li>
+              </ul>
+            </li>
+            <li>Users also expressed frustration with one of the following reasons:
+              <ul>
+                <li>They made a mistake customizing their drink, they had no way to edit their 
+                  order so they simply had to delete that item and customize their drink again.</li>
+                <li>They were asked to enter their phone number and name before checking out 
+                  and not allowed to avoid entering that information.</li>
+                <li>Glitches with the interface like the keyboard not collapsing after concluding
+                  a search or being unable to return to the cart to checkout etc.</li>
+                <li>The menu was billingual and had some spacing and script related bugs which caused some
+                  of the textual information to be confusing.</li>
+                <li>The credit card machine was obscured from view and did not provide the option for a 
+                  receipt.</li>
+                <li>The rewards program awarded the user with stars after ordering but it was unclear
+                  how they would use those stars.</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Personas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>Personas</h3>
+        <p>These personas are based on overarching trends I observed amongst all the users I interviewed, 
+          not characteristics I observed from a specific individual. I've created a four-quadrant empathy map,
+          describing what users think, feel, say, and do for one archetypal character that will represent part
+          of the spectrum of users I observed. </p>
+      </div>
+    </div>
+    <!-- Persona 1  -->
+    <div class="row">
+      <div class="column">
+        <h4>Persona 1: Introverted Izzy</h4>
+        <div class="image-wrapper">
+          <img src="images/persona1.png" style="max-width: 70%;">
+        </div>
+        <p style="margin-top: 3%">
+          Izzy is an introvert and likes to avoid unnecessary human interaction when possible. They normally go
+          up to the counter but get nervous and feel awkward about wasting the cashier’s time and order the 
+          standard drink which they don’t actually enjoy. They are reluctant to ask for help when they are not
+          able to figure something out and get flustered very easily. So, they are very happy about being able
+          to use an automated kiosk to order instead of doing so at the counter and take their own sweet time 
+          while feeling very comfortable.
+        </p>
+      </div>
+    </div>
+    <!-- Persona 2  -->
+    <div class="row">
+      <div class="column">
+        <h4>Persona 2: Frustrated Frank</h4>
+        <div class="image-wrapper">
+          <img src="images/persona2.png" style="max-width: 70%;">
+        </div>
+        <p style="margin-top: 3%">
+          Frank is short tempered and not having a good day. Already frustrated, they come to the cafe for a 
+          drink to cool off; but every part of the process seems to not work as it should, frustrating them 
+          even further. They just want to get out of there as fast as they can but they are not able to. They
+          don't read any of the instructions and try to speed through the process while also pressing harder
+          than they should on the touchscreen causing glitches. They are unhappy about the bilingual nature
+          of the menu and the resulting lack of clarity on certain menu items. The lack of explanation on
+          the rewards process and the fact that they are spending so much time on this all contributes to
+          an unpleasant experience.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Storyboarding
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>Storyboarding</h3>
+        <p>This storyboard walks through Introverted Izzy coming to the cafe to order a drink. </p>
+        <div class="image-wrapper">
+          <img src="images/storyboard1.jpg" style="max-width: 90%;">
+        </div>
+        <div class="image-wrapper">
+          <img src="images/storyboard2.jpg" style="max-width: 90%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Conclusion
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 3%">
+        <h3>Conclusion</h3>
+        <p>To summarize this process, I think it's clear that personas and storyboards are powerful 
+          tools that help capture the intricaies and nuances of a user experience in a way that simpler
+          tools like user roles, market segments etc. simply cannot do. Automation in industries like 
+          food are often touted as an unnecessary evil and articles like <a href="https://gizmodo.com/why-self-checkout-is-and-has-always-been-the-worst-1833106695">this one</a> 
+          explain why it could be, as it was for Frustrated Frank, but hopefully Introverted Izzy was
+          a good example of why it could be a blessing to some as well.</p>
+      </div>
+    </div>
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
